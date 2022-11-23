@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FM.css">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <form id="FM" name="form">
+    <img src="images/logo-solicode.png" alt="logo" id="logo">
+    
+    <!--information personnel-->
+    <div class="background">     
+    <h1>Inscription aux clubs parascolaires de Solicode</h1>
+    
+    <div class="div1">
+        <br>
+        <div class="ip">
+        <h3 id="inp">Infos personnel</h3>
+        <br>
+        <input type="text" placeholder="Nom" id="nom"><br>
+        <input type="text" placeholder="Prénom" id="prenom"><br>
+        <input type="text" placeholder="Email" id="email"><br>
+        <input type="text" placeholder="Télephone" id="telephone"   ²><br>
+    </div>
+    <!--Genre-->
+    <div class="genre">
+    <h3>Genre</h3>
+    <br>
+    <input type="radio" name="genre" id="feminin">féminin
+    <input type="radio" name="genre" id="masculin">masculin
+    <br>
+    <br>
+    <p id="msg" class="messages"></p>
+    </div>
+    <!--Groupes-->
+    <div class="genre">
+    <h3>Groupes</h3>
+    <br>
+    <input type="radio" name="groupe">DW101 <br>
+    <input type="radio" name="groupe">DW102 <br>
+    <input type="radio" name="groupe">DW103 <br>
+    <input type="radio" name="groupe">DM101 <br>
+    <input type="radio" name="groupe">DM102 <br>
+    <br>
+    <br>
+    <p id="message" class="messages"></p>
+    </div>
+    <!--Clubes-->
+    <div>
+    <h3 id="title">Clubes</h3>
+    <br>
+    <select multiple name="clubes" id="clubes">
+    <option value="informatique">Informatique</option>
+    <option value="robotique">Robotique</option>
+    <option value="jeu d'échecs">Jeu D'échecs</option>
+    <option value="music">Music</option>
+    <option value="foot">Foot</option>
+    <option value="théatre">Théatre</option>
+    </select>
+    <br>
+    <br>
+    <p id="error" class="messages"></p>
+    </div>
+    <button id="button" type="submit">Envoyer</button>
+</div>
+</div>
+</form>
+<script src="FM.js"></script>
+</body>
+</html>
